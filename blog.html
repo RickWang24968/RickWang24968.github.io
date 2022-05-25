@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                            <img src="img/blog/blog-post-1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="blog-post.html">如果你只有几分钟（几天、二十年）可以活了，那么你将怎样利用这段时间？</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>有一则古老的谚语说：散兵坑里没有无神论者。这就是说，当面对死亡的时候，我们都会寻求一些终极的东西来支撑自己。当然，散兵坑这个例子既可以象征绝望和恐怖，又可以代表我们每个人都有的一些潜在的宗教冲动，但许多情况都表明，正是对死亡的思考才使我们每个人都成了哲学家。
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                            <img src="img/blog/blog-post-2.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="blog-post.html">有没有某种你愿意为之付出生命的东西？</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>哲学家苏格拉底之所以甘愿赴死，是因为他认为即使法律判处他死刑，他也有义务去遵守一个城邦的法律（他是服毒而死的。他被迫喝下了一杯毒芹汁，半小时后就死了）。
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                            <img src="img/blog/blog-post-3.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="blog-post.html">人的生活拥有哪些在牛或昆虫那里无法找到的目的？你的生活目标是什么？</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>“生活的意义”问题也许是哲学中最大的问题。同一只蚊子相比，我们料想人的生活意义一定有很大的不同。但它们的区别是什么呢？一种可能的回答是，在上帝的创造中只有人占据着一个特殊的位置，扮演着特殊的角色。但这是怎样一种角色呢？我们怎么能确信蚊子就没有呢？即使我们来自上帝的创造，我们的生活就有意义吗？个人怎样知道他被指派的角色是什么呢？
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                            <img src="img/blog/blog-post-4.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="blog-post.html">你信仰上帝吗？</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>大多数学生在回答这个问题时不会有什么困难，甚至是那些想法不甚明确的学生也会马上回答说，他们不知道自己到底信仰什么。在所有哲学问题当中，也许这个问题是被思考得最多的，因为它显然是如此重要（即使与我们生活中所关心的大多数事物相比，它显然是哲学上的）。
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                            <img src="img/blog/blog-post-5.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="blog-post.html">下面哪种东西最“真实”——是你所坐的椅子，构成这张椅子的分子，还是当你坐在上面时的感觉印象？</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>我们倾向于认为，所谓“实在”，就是那些相当于我们的感官最真实、最显然和最清晰的东西，但有时对感官来说是清楚和显然的东西却是一种不真实的幻觉。科学家告诉我们，说椅子是一种坚实的东西其实是不对的。
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                            <img src="img/blog/blog-post-6.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="blog-post.html">你怎样证明你的确有思想和感觉，的确有一个“心灵”？</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>诚然，我们通常假定一个人身体的可以看到的活动（他的行为、举止、讲话）是不可见的精神过程的表达，但如何来证明这一点？你将怎样向一个并不认为身体活动是精神过程之表达的人证明你有一个心灵（思想和感觉）？你又将怎样去说服一个宣称你（或他）没有心灵的人呢？
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Pagination Starts -->
+            <div class="col-12 mt-4">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pagination Ends -->
+        </div>
+        <!-- Articles Ends -->
+    </div>
+
+</section>
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
